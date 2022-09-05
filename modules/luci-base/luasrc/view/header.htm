@@ -15,29 +15,6 @@
 
 <script type="text/javascript" src="<%=resource%>/promis.min.js"></script>
 <script type="text/javascript" src="<%=resource%>/luci.js"></script>
-<style>
-body.modal-overlay-active #modal_overlay {
-}
-
-body.modal-overlay-active #modal_overlay > .modal {
-	align-items: center;
-	box-shadow: 0 0 3px #444;
-	display: flex;
-	flex-wrap: wrap;
-	max-height: unset;
-	/* max-width: unset; */
-	min-height: 32px;
-	min-width: 270px;
-	background: #fff;
-	border-radius: 3px;
-	padding: 1em;
-	margin: 0;
-	position: absolute;
-	top: 15%;
-	left: 50%;
-	transform: translate(-50%,-15%);
-}
-</style>
 <script src="<%=resource%>/jquery.min.js"></script>
 <script type="text/javascript">
 	L = new LuCI(<%= luci.http.write_json({
